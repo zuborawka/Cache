@@ -8,6 +8,6 @@ It's a plugin to clear temporaly cache files.
 
 Put plugin files into your plugin directory.
 
-Access below URL.
+Access like a below URL.
 
-http://example.com/[app/]admin/cache/clear
+//example.com/[app/]admin/cache/clear
