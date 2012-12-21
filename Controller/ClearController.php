@@ -14,7 +14,7 @@ class ClearController extends CacheAppController
 		return $this->index('core');
 	}
 
-	public function admin_index($location = 'app', $afterProcess = false) {
+	public function admin_index($location = 'app', $redirectAfterProcess = true) {
 		switch ($location) {
 			case 'core':
 				$root = CAKE_CORE_INCLUDE_PATH;
@@ -30,7 +30,7 @@ class ClearController extends CacheAppController
 			$msg = 'Temporaly files aren\'t removed.';
 		}
 
-		if ($afterProcess){
+		if ($redirectAfterProcess){
 			$this->_end($msg);
 		}
 	}

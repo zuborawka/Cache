@@ -28,7 +28,7 @@ class ClearControllerTest extends CakeTestCase
 		$result = file_exists($file);
 		$this->assertEquals($expected, $result);
 
-		@$this->Controller->admin_index('app');
+		@$this->Controller->admin_index('app', false);
 
 		$expected = false;
 		$result = file_exists($file);
